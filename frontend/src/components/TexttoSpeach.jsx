@@ -8,7 +8,7 @@ const TextToSpeech = () => {
   const [isLoading, setIsLoading] = useState(false); // Loading state for the preloader
   const [audio, setAudio] = useState(null);
 
-  const API_KEY = "AIzaSyDQbc5sxwrvdn1WzY9__uM8RxZkATbvuFM"; // Replace with your API key
+  const API_KEY = process.env.API_KEY; // Replace with your API key
 
   // Function to fetch the readable content of the page
   const getPageContent = () => {
